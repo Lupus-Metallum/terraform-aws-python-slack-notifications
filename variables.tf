@@ -43,3 +43,20 @@ variable "tags" {
   type        = map
   default     = {}
 }
+
+variable "kms_key_description" {
+  description = "description of what the key is used for"
+  default     = "kms key created by slack alerter to encrypt resources"
+}
+
+variable "security_group_ids" {
+  description = "ids of the security groups to be used by the lambda function"
+  type        = list(string)
+  default     = []
+}
+
+variable "subnet_ids" {
+  description = "subnet ids for the lambda function"
+  type        = list(string)
+  default     = []
+}

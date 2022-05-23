@@ -107,7 +107,7 @@ data "aws_iam_policy_document" "this" {
       "secretsmanager:ListSecrets"
     ]
     resources = [
-      data.data.aws_secretsmanager_secret.this.arn
+      data.aws_secretsmanager_secret.this.arn
     ]
   }
 }
