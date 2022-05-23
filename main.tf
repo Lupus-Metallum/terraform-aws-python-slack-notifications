@@ -32,7 +32,7 @@ resource "aws_lambda_function" "this" {
 
   dynamic "vpc_config" {
     for_each = length(var.security_group_ids) > 0 && length(var.subnet_ids) > 0 ? [0] : []
-    content = {
+    content {
       security_group_ids = var.security_group_ids
       subnet_ids         = var.subnet_ids
     }
@@ -40,7 +40,7 @@ resource "aws_lambda_function" "this" {
 
   dynamic "tracing_config" {
     for_each = var.lambda_tracing ? [0] : []
-    content = {
+    content {
       mode = "Active"
     }
   }
