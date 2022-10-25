@@ -22,6 +22,9 @@ module "terraform-aws-python-slack-notifications" {
 
 <!-- BEGIN_TF_DOCS -->
 
+<img src="https://raw.githubusercontent.com/Lupus-Metallum/brand/master/images/logo.jpg" width="400"/>
+
+
 
 ## Providers
 
