@@ -1,5 +1,3 @@
-<img src="https://raw.githubusercontent.com/Lupus-Metallum/brand/master/images/logo.jpg" width="400"/>
-
 # terraform-aws-python-slack-notifications
 
 A Terraform module for deploying and managing a Python (3.7) lambda function to send SNS messages to a Slack channel via Webhook.
